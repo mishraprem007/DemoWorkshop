@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-09T16:36:42 IST" name="Suite" finished-at="2026-04-09T16:37:15 IST" duration-ms="32990">
+  <suite started-at="2026-04-09T17:03:13 IST" name="Default suite" finished-at="2026-04-09T17:03:28 IST" duration-ms="15342">
     <groups>
     </groups>
-    <test started-at="2026-04-09T16:36:42 IST" name="Test" finished-at="2026-04-09T16:37:15 IST" duration-ms="32990">
+    <test started-at="2026-04-09T17:03:13 IST" name="Default test" finished-at="2026-04-09T17:03:28 IST" duration-ms="15342">
       <class name="WorkshopDemoTest.UsersOrderTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:36:42 IST" name="configBC" finished-at="2026-04-09T16:36:44 IST" duration-ms="1818" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:13 IST" name="configBC" finished-at="2026-04-09T17:03:16 IST" duration-ms="2636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:36:46 IST" name="configBM" finished-at="2026-04-09T16:36:48 IST" duration-ms="2494" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:18 IST" name="configBM" finished-at="2026-04-09T17:03:20 IST" duration-ms="2284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:36:48 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T16:37:00 IST" duration-ms="11534" status="PASS">
+        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:20 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T17:03:23 IST" duration-ms="2677" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -38,18 +38,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "com.workshop.generic.listenerutility.ListImpClass.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "com.workshop.generic.listenerutility.ListImpClass.test" is null
+at WorkshopDemoTest.UsersOrderTest.accountCreationOrderTest(UsersOrderTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountCreationOrderTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:37:00 IST" name="configAM" finished-at="2026-04-09T16:37:01 IST" duration-ms="972" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:23 IST" name="configAM" finished-at="2026-04-09T17:03:24 IST" duration-ms="1004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:37:01 IST" name="configBM" finished-at="2026-04-09T16:37:01 IST" duration-ms="528" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:24 IST" name="configBM" finished-at="2026-04-09T17:03:24 IST" duration-ms="608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:37:01 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T16:37:12 IST" duration-ms="11018" status="PASS">
+        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:24 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T17:03:27 IST" duration-ms="2576" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -72,18 +108,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "com.workshop.generic.listenerutility.ListImpClass.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "com.workshop.generic.listenerutility.ListImpClass.test" is null
+at WorkshopDemoTest.UsersOrderTest.accountCreationOrderTest(UsersOrderTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountCreationOrderTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:37:12 IST" name="configAM" finished-at="2026-04-09T16:37:13 IST" duration-ms="1031" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:27 IST" name="configAM" finished-at="2026-04-09T17:03:28 IST" duration-ms="1058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T16:37:13 IST" name="configAC" finished-at="2026-04-09T16:37:15 IST" duration-ms="1967" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T17:03:28 IST" name="configAC" finished-at="2026-04-09T17:03:28 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
       </class> <!-- WorkshopDemoTest.UsersOrderTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

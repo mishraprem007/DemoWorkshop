@@ -11,11 +11,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
-import com.aventstack.extentreports.Status;
 import com.workshop.generic.fileutility.ExcelUtility;
 import com.workshop.generic.fileutility.FileUtility;
-import com.workshop.generic.listenerutility.ListImpClass;
 import com.workshop.generic.webdriverutility.JavaUtility;
 import com.workshop.generic.webdriverutility.WebDriverUtility;
 import com.workshop.objectrepositoryutility.HomePage;
@@ -30,7 +27,6 @@ public class BaseClass {
 	@BeforeClass
 	public void configBC() throws Throwable {
 		System.out.println("==Launch the BROWSER==");
-		ListImpClass.test.log(Status.INFO, "Launched Browser");
 		String browser = fLib.getDataFromProperties("browser");
 
 		if (browser.equals("chrome")) {
@@ -55,7 +51,6 @@ public class BaseClass {
 	@BeforeMethod
 	public void configBM() throws Throwable {
 		System.out.println("==Login==");
-		ListImpClass.test.log(Status.INFO, "Login");
 		String url = fLib.getDataFromProperties("url");
 		driver.get(url);
 	}
@@ -63,7 +58,6 @@ public class BaseClass {
 	@AfterMethod
 	public void configAM() {
 		System.out.println("==Logout==");
-		ListImpClass.test.log(Status.INFO, "Logout");
 		HomePage hp = new HomePage(driver);
 		hp.clickLogout();
 	}
@@ -71,7 +65,6 @@ public class BaseClass {
 	@AfterClass
 	public void configAC() {
 		System.out.println("==Close the BROWSER==");
-		ListImpClass.test.log(Status.INFO, "Close the BROWSER");
 		driver.quit();
 
 	}
