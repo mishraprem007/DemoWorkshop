@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.workshop.generic.webdriverutility.WebDriverUtility;
-
 public class ShoppingCartPage {
 	WebDriver driver;
 
