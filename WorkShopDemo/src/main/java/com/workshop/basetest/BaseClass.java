@@ -28,7 +28,7 @@ public class BaseClass {
 	@BeforeClass
 	public void configBC() throws Throwable {
 		System.out.println("==Launch the BROWSER==");
-		
+
 		String browser = fLib.getDataFromProperties("browser");
 
 		if (browser.equals("chrome")) {
@@ -52,14 +52,14 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void configBM() throws Throwable {
-		System.out.println("Login");
+		System.out.println("==Login==");
 		String url = fLib.getDataFromProperties("url");
 		driver.get(url);
 	}
 
 	@AfterMethod
 	public void configAM() {
-		System.out.println("=Logout=");
+		System.out.println("==Logout==");
 		HomePage hp = new HomePage(driver);
 		hp.clickLogout();
 	}
