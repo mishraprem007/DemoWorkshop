@@ -44,7 +44,6 @@ public class UsersOrderTest extends BaseClass {
 
 	@Test(dataProvider = "userData")
 	public void accountCreationOrderTest(String fname, String lname, String email1, String email2) throws Throwable {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		RegisterPage rp = new RegisterPage(driver);
 
 		rp.clickRegisterLink();
