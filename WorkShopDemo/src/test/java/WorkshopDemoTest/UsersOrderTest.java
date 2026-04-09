@@ -21,7 +21,7 @@ import com.workshop.objectrepositoryutility.ProductPage;
 import com.workshop.objectrepositoryutility.RegisterPage;
 
 public class UsersOrderTest extends BaseClass {
-/* To check jenkins  */
+
 	int colCounter = 0;
 
 	@DataProvider(name = "userData")
