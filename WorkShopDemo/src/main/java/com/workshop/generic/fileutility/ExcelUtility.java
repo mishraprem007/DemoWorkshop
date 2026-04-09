@@ -2,10 +2,6 @@ package com.workshop.generic.fileutility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -17,14 +13,6 @@ public class ExcelUtility {
 		String data = wb.getSheet(sheetName).getRow(rowNum).getCell(celNum).toString();
 		wb.close();
 		return data;
-	}
-
-	public int getRowCount(String sheetName) throws Throwable {
-		FileInputStream fis = new FileInputStream("./testdata/testscriptdata.xlsx");
-		Workbook wb = WorkbookFactory.create(fis);
-		int rowCount = wb.getSheet(sheetName).getLastRowNum();
-		wb.close();
-		return rowCount;
 	}
 
 	public void setDataIntoExcel(String sheetName, int rowNum, int celNum, String data) throws Throwable {

@@ -7,7 +7,7 @@
         <methods>
           <include name="configBM"/>
           <include name="configAC"/>
-          <include name="accountCreationOrderTest"/>
+          <include name="accountCreationOrderTest" invocation-numbers="0"/>
           <include name="configBC"/>
           <include name="configAM"/>
         </methods>

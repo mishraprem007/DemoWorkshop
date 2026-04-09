@@ -9,7 +9,7 @@ public class JavaUtility {
 		int ranDomNumber = ranDom.nextInt(5000);
 		return ranDomNumber;
 	}
-
+	
 	public String getOrderNumber(String text) {
 		return text.split(": ")[1];
 	}

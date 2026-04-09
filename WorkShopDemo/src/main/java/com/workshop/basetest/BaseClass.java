@@ -19,7 +19,7 @@ import com.workshop.generic.webdriverutility.WebDriverUtility;
 import com.workshop.objectrepositoryutility.HomePage;
 
 public class BaseClass {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public FileUtility fLib = new FileUtility();
 	public ExcelUtility eLib = new ExcelUtility();
 	public JavaUtility jLib = new JavaUtility();

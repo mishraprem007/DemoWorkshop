@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-09T13:27:48 IST" name="Default suite" finished-at="2026-04-09T13:28:24 IST" duration-ms="35779">
+  <suite started-at="2026-04-09T14:32:31 IST" name="Suite" finished-at="2026-04-09T14:33:30 IST" duration-ms="58731">
     <groups>
     </groups>
-    <test started-at="2026-04-09T13:27:48 IST" name="Default test" finished-at="2026-04-09T13:28:24 IST" duration-ms="35779">
+    <test started-at="2026-04-09T14:32:31 IST" name="Test" finished-at="2026-04-09T14:33:30 IST" duration-ms="58731">
       <class name="WorkshopDemoTest.UsersOrderTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:27:48 IST" name="configBC" finished-at="2026-04-09T13:27:50 IST" duration-ms="2456" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:32:31 IST" name="configBC" finished-at="2026-04-09T14:32:33 IST" duration-ms="1773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:27:53 IST" name="configBM" finished-at="2026-04-09T13:27:55 IST" duration-ms="2477" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:32:35 IST" name="configBM" finished-at="2026-04-09T14:32:38 IST" duration-ms="2640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:27:55 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T13:28:08 IST" duration-ms="12896" status="PASS">
+        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:32:38 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T14:32:50 IST" duration-ms="11594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountCreationOrderTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:28:08 IST" name="configAM" finished-at="2026-04-09T13:28:09 IST" duration-ms="1029" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:32:50 IST" name="configAM" finished-at="2026-04-09T14:32:51 IST" duration-ms="1027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:28:09 IST" name="configBM" finished-at="2026-04-09T13:28:10 IST" duration-ms="585" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:32:51 IST" name="configBM" finished-at="2026-04-09T14:32:52 IST" duration-ms="1430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:28:10 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T13:28:22 IST" duration-ms="12317" status="PASS">
+        <test-method signature="accountCreationOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:32:52 IST" name="accountCreationOrderTest" data-provider="userData" finished-at="2026-04-09T14:33:28 IST" duration-ms="36420" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -72,18 +72,85 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#termsofservice"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8dc090516c5c15dbc53cbd6b6c962b5a, findElement {value=termsofservice, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\PREMSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49273}, goog:processID: 23408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49273/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8dc090516c5c15dbc53cbd6b6c962b5a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#termsofservice"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8dc090516c5c15dbc53cbd6b6c962b5a, findElement {value=termsofservice, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\PREMSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49273}, goog:processID: 23408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49273/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8dc090516c5c15dbc53cbd6b6c962b5a
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.workshop.objectrepositoryutility.ProductPage.completeCheckout(ProductPage.java:57)
+at WorkshopDemoTest.UsersOrderTest.accountCreationOrderTest(UsersOrderTest.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountCreationOrderTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:28:22 IST" name="configAM" finished-at="2026-04-09T13:28:23 IST" duration-ms="1091" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:33:29 IST" name="configAM" finished-at="2026-04-09T14:33:30 IST" duration-ms="1013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@433defed]" started-at="2026-04-09T13:28:23 IST" name="configAC" finished-at="2026-04-09T13:28:24 IST" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:WorkshopDemoTest.UsersOrderTest@7fd50002]" started-at="2026-04-09T14:33:30 IST" name="configAC" finished-at="2026-04-09T14:33:30 IST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
       </class> <!-- WorkshopDemoTest.UsersOrderTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
