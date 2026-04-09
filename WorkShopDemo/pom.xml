@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- Project Details -->
-	<groupId>April_8</groupId>
-	<artifactId>April_8</artifactId>
+	<groupId>WorkShopDemo</groupId>
+	<artifactId>WorkShopDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
