@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.workshop.generic.webdriverutility.WebDriverUtility;
 
-public class ProductPage {
+public class ShoppingCartPage {
 	WebDriver driver;
 
-	public ProductPage(WebDriver driver) {
+	public ShoppingCartPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -22,7 +22,7 @@ public class ProductPage {
 	private WebElement shoppingCartBtn;
 
 	@FindBy(id = "termsofservice")
-	private WebElement shoppingCart;
+	private WebElement termofserviceCheckBox;
 
 	@FindBy(id = "checkout")
 	private WebElement checkoutBtn;
@@ -54,7 +54,7 @@ public class ProductPage {
 
 		addToCartBtn.click();
 		shoppingCartBtn.click();
-		shoppingCart.click();
+		termofserviceCheckBox.click();
 		checkoutBtn.click();
 
 		selectCountry(country);

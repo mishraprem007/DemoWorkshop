@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import com.workshop.basetest.BaseClass;
 import com.workshop.objectrepositoryutility.CheckOutPage;
 import com.workshop.objectrepositoryutility.HomePage;
-import com.workshop.objectrepositoryutility.ProductPage;
+import com.workshop.objectrepositoryutility.ShoppingCartPage;
 import com.workshop.objectrepositoryutility.RegisterPage;
 
 public class UsersOrderTest extends BaseClass {
@@ -67,7 +67,7 @@ public class UsersOrderTest extends BaseClass {
 		String zip = eLib.getDataFromExcel("CheckoutData", 8, 0);
 		String phone = eLib.getDataFromExcel("CheckoutData", 8, 1);
 
-		ProductPage pp = new ProductPage(driver);
+		ShoppingCartPage pp = new ShoppingCartPage(driver);
 		pp.completeCheckout(countryName, city, address, zip, phone);
 
 		CheckOutPage cp = new CheckOutPage(driver);
