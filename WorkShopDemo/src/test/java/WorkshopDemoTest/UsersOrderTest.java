@@ -44,7 +44,7 @@ public class UsersOrderTest extends BaseClass {
 	}
 
 	@Test(dataProvider = "userData")
-	public void accountCreationOrderTest(String fName, String lName, String email1, String email2) throws Throwable {
+	public void accountCreationAndOrderTest(String fName, String lName, String email1, String email2) throws Throwable {
 		RegisterPage rp = new RegisterPage(driver);
 
 		rp.clickRegisterLink();

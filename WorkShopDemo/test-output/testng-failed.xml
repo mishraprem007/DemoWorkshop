@@ -7,9 +7,9 @@
         <methods>
           <include name="configBM"/>
           <include name="configAC"/>
-          <include name="accountCreationOrderTest" invocation-numbers="0 1"/>
           <include name="configBC"/>
           <include name="configAM"/>
+          <include name="accountCreationAndOrderTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- WorkshopDemoTest.UsersOrderTest -->
     </classes>
