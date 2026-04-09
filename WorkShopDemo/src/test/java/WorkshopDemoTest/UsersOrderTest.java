@@ -43,7 +43,7 @@ public class UsersOrderTest extends BaseClass {
 	}
 
 	@Test(dataProvider = "userData")
-	public void accountCreationOrderTest(String fname, String lname, String email1, String email2) throws Throwable {
+	public void accountCreationOrderTest(String fName, String lName, String email1, String email2) throws Throwable {
 		RegisterPage rp = new RegisterPage(driver);
 
 		rp.clickRegisterLink();
@@ -51,7 +51,7 @@ public class UsersOrderTest extends BaseClass {
 		String userEmail1 = email1 + jLib.getRandomNumber();
 		String userEmail = userEmail1 + email2;
 
-		rp.registerUser(fname, lname, userEmail, userEmail1);
+		rp.registerUser(fName, lName, userEmail, userEmail1);
 
 		String userRegConfirmationActual = rp.getRegistrationCompletedText().getText().trim();
 		String userRegistrationConfirmationActual = eLib.getDataFromExcel("RegConfirmation", 1, 1);
