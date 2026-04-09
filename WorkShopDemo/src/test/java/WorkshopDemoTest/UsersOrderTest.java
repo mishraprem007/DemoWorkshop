@@ -1,5 +1,14 @@
 package WorkshopDemoTest;
 
+/**
+ * @author Premshankar Mishra
+ * 1. Create 2 users
+ * 2. add product to cart
+ * 3. buy product - for both users
+ * 4. assertion - for users creation, aadingProduct, orderID
+ * 5. writeback orderID
+ * (Don't use hardcoded value)
+ */
 import java.time.Duration;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -72,19 +81,18 @@ public class UsersOrderTest extends BaseClass {
 		String expectedOrderMessage = eLib.getDataFromExcel("Validation", 1, 1);
 		String orderSucessfulMessage = cp.getOrderSuccesfulMessage().getText();
 
+		
+		/* This is an extra assertion I added, which is not mentioned in the test case */
 		Assert.assertEquals(orderSucessfulMessage, expectedOrderMessage);
 
 		String actualOrderDetails = cp.getOrderID().getText();
 		String extpectedOrderDetails = eLib.getDataFromExcel("Validation", 2, 1);
 
-
 		Assert.assertTrue(actualOrderDetails.contains(extpectedOrderDetails));
 
-
 		String orderID = jLib.getOrderNumber(actualOrderDetails);
-		eLib.setOrderNumber("WriteBackOrderID", 1, colCounter, orderID);
+		eLib.setDataIntoExcel("WriteBackOrderID", 1, colCounter, orderID);
 		colCounter++;
-		
 
 	}
 }

@@ -36,25 +36,4 @@ public class ExcelUtility {
 		wb.close();
 	}
 
-	public void setOrderNumber(String sheetName, int rowNum, int colNum, String orderNumber) throws Throwable {
-		FileInputStream fis = new FileInputStream("./testdata/testscriptdata.xlsx");
-		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sheet = wb.getSheet(sheetName);
-
-		Row row = sheet.getRow(rowNum);
-		if (row == null)
-			row = sheet.createRow(rowNum);
-
-		Cell cell = row.getCell(colNum);
-		if (cell == null)
-			cell = row.createCell(colNum);
-
-		cell.setCellValue(orderNumber);
-
-		FileOutputStream fos = new FileOutputStream("./testdata/testscriptdata.xlsx");
-		wb.write(fos);
-
-		wb.close();
-	}
-
 }
