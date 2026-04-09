@@ -67,10 +67,9 @@ public class UsersOrderTest extends BaseClass {
 		String zip = eLib.getDataFromExcel("CheckoutData", 8, 0);
 		String phone = eLib.getDataFromExcel("CheckoutData", 8, 1);
 
-		ShoppingCartPage pp = new ShoppingCartPage(driver);
-		pp.completeCheckout(countryName, city, address, zip, phone);
-
 		CheckOutPage cp = new CheckOutPage(driver);
+		cp.completeCheckout(countryName, city, address, zip, phone);
+
 		cp.continueOrder();
 		String actualProduct = cp.getProductNameText().getText();
 
@@ -80,8 +79,9 @@ public class UsersOrderTest extends BaseClass {
 		String expectedOrderMessage = eLib.getDataFromExcel("Validation", 1, 1);
 		String orderSucessfulMessage = cp.getOrderSuccesfulMessage().getText();
 
-		
-		/* This is an extra assertion I added, which is not mentioned in the test case */
+		/*
+		 * This is an extra assertion I added, which is not mentioned in the test case
+		 */
 		Assert.assertEquals(orderSucessfulMessage, expectedOrderMessage);
 
 		String actualOrderDetails = cp.getOrderID().getText();

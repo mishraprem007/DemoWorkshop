@@ -5,12 +5,48 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.workshop.generic.webdriverutility.WebDriverUtility;
+
 public class CheckOutPage {
 	WebDriver driver;
 
 	public CheckOutPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(id = "BillingNewAddress_CountryId")
+	private WebElement countryDD;
+
+	public void selectCountry(String countryName) {
+		WebDriverUtility wLib = new WebDriverUtility();
+		wLib.selectByvalue(countryDD, countryName);
+	}
+
+	@FindBy(id = "BillingNewAddress_City")
+	private WebElement cityEdit;
+
+	@FindBy(id = "BillingNewAddress_Address1")
+	private WebElement address1Edit;
+
+	@FindBy(id = "BillingNewAddress_ZipPostalCode")
+	private WebElement zipEdit;
+
+	@FindBy(id = "BillingNewAddress_PhoneNumber")
+	private WebElement phoneNoEdit;
+
+	@FindBy(xpath = "//input[@class='button-1 new-address-next-step-button']")
+	private WebElement continueBtn;
+
+	public void completeCheckout(String country, String city, String address, String zip, String phone) {
+		ShoppingCartPage sp = new ShoppingCartPage(driver);
+		sp.checkout();
+		selectCountry(country);
+		cityEdit.sendKeys(city);
+		address1Edit.sendKeys(address);
+		zipEdit.sendKeys(zip);
+		phoneNoEdit.sendKeys(phone);
+		continueBtn.click();
 	}
 
 	@FindBy(xpath = "//input[@onclick='Billing.save()']")
