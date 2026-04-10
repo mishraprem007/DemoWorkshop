@@ -6,7 +6,7 @@ public class JavaUtility {
 
 	public int getRandomNumber() {
 		Random ranDom = new Random();
-		int ranDomNumber = ranDom.nextInt(5000);
+		int ranDomNumber = ranDom.nextInt(99999);
 		return ranDomNumber;
 	}
 	

@@ -13,7 +13,10 @@ package WorkshopDemoTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 import com.workshop.basetest.BaseClass;
+import com.workshop.generic.listenerutility.ListImpClass;
 import com.workshop.objectrepositoryutility.CheckOutPage;
 import com.workshop.objectrepositoryutility.HomePage;
 import com.workshop.objectrepositoryutility.RegisterPage;
@@ -55,7 +58,7 @@ public class UsersOrderTest extends BaseClass {
 		String userRegistrationConfirmationActual = eLib.getDataFromExcel("RegConfirmation", 1, 1);
 
 		Assert.assertEquals(userRegConfirmationActual, userRegistrationConfirmationActual);
-
+		ListImpClass.test.log(Status.PASS, "user's registration is Verfied");
 
 		HomePage hp = new HomePage(driver);
 		String expectedProduct = eLib.getDataFromExcel("Products", 1, 0);
@@ -83,12 +86,13 @@ public class UsersOrderTest extends BaseClass {
 	/*	 This is an extra assertion I added, which is not mentioned in the test case   */
 		 
 		Assert.assertEquals(orderSucessfulMessage, expectedOrderMessage);
-
+        ListImpClass.test.log(Status.PASS, "order message is verified");
 
 		String actualOrderDetails = cp.getOrderID().getText();
 		String extpectedOrderDetails = eLib.getDataFromExcel("Validation", 2, 1);
 
 		Assert.assertTrue(actualOrderDetails.contains(extpectedOrderDetails));
+		ListImpClass.test.log(Status.PASS, "order details is  verified");
 
 
 		String orderID = jLib.getOrderNumber(actualOrderDetails);
